@@ -36,13 +36,17 @@
 
         <h1>m3u8在线播放器</h1>
 
-
+        
         <div class="form">
             <input type="text" id="url" value="" placeholder="请输入m3u8播放地址" autocomplete="off">
             <img src="./images/ic-play.png" alt="播放" onclick="play()" />
         </div>
-
-
+        
+        <div class="alert alert-success" role="alert" style="letter-spacing: 1px;">
+             <p>
+                如果播放失败可多尝试几次
+            </p>
+        </div>
         <video id="player-container-id" preload="auto" webkit-playsinline playsinline
             style="width: 100%;min-height:200px; background:#000;">
         </video>
