@@ -162,7 +162,7 @@
             </p>
             <p>
             <pre
-                id="pre">&lt;iframe src="https://m3u8player.org/player.html?url=https://****index.m3u8"&gt;&lt;/iframe&gt;</pre>
+                id="pre">&lt;iframe src="https://m3u8player.org/player.html?url=https://****.m3u8"&gt;&lt;/iframe&gt;</pre>
             </p>
             <p>
                 M3U8Player 是一款实现 HTTP 实时流客户端的 Chrome 浏览器扩展工具。你可以播放 .m3u8 HTTP Live Streaming (HLS)。它依靠 HTML5
@@ -208,7 +208,7 @@
 
         function play() {
 
-            let url = $("#url").val()
+            const url = $("#url").val()
 
             if (player === undefined) {
                 player = TCPlayer('player-container-id', {
@@ -216,13 +216,12 @@
                         src: url,
                     }],
                     // licenseUrl需自己去腾讯云申请
-                    licenseUrl: 'https://xxxxxxxxxxxxxx',
+                    licenseUrl:   'https://license.vod2.myqcloud.com/license/v2/1257958038_1/v_cube.license'
                 });
             }
 
 
             player.pause();
-            console.log(url)
             player.src(url); // url 播放地址
         }
 
@@ -234,7 +233,7 @@
             if (url.value) {
                 pre.innerHTML = `&lt;iframe src="https://m3u8player.org/player.html?url=${url.value}"&gt;&lt;/iframe&gt;`;
             } else {
-                pre.innerHTML = `&lt;iframe src="https://m3u8player.org/player.html?url=https://****index.m3u8"&gt;&lt;/iframe&gt;`;
+                pre.innerHTML = `&lt;iframe src="https://m3u8player.org/player.html?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
             }
         };
     </script>
