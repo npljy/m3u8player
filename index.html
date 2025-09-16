@@ -57,7 +57,7 @@
                 嵌入网站（ 三击下面代码可直接选中 ）:
             </p>
             <p>
-            <pre id="pre">&lt;iframe src="https://m3u8player.org/player.html?url=https://****.m3u8"&gt;&lt;/iframe&gt;</pre>
+            <pre id="pre">&lt;iframe src=""&gt;&lt;/iframe&gt;</pre>
             </p>
             <p>
                 M3U8Player 是一款实现 HTTP 实时流客户端的 Chrome 浏览器扩展工具。你可以播放 .m3u8 HTTP Live Streaming (HLS)。它依靠 HTML5
@@ -128,13 +128,17 @@
 
     </script>
     <script>
+        const loc = window.location.origin + window.location.pathname;
         const url = document.getElementById('url');
         const pre = document.getElementById('pre');
+        window.onload = function () {
+            pre.innerHTML = `&lt;iframe src="${loc}/player.html?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
+        };
         url.oninput = function () {
             if (url.value) {
-                pre.innerHTML = `&lt;iframe src="https://m3u8player.org/player.html?url=${url.value}"&gt;&lt;/iframe&gt;`;
+                pre.innerHTML = `&lt;iframe src="${loc}/player.html?url=${url.value}"&gt;&lt;/iframe&gt;`;
             } else {
-                pre.innerHTML = `&lt;iframe src="https://m3u8player.org/player.html?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
+                pre.innerHTML = `&lt;iframe src="${loc}/player.html?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
             }
         };
     </script>
