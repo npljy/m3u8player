@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="M3U8Player播放器，用于m3u8文件的在线播放，xuehuayu">
-
+    <link href="./css/index.css" rel="stylesheet">
     <script src="./js/jquery.min.js"></script>
 
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -16,110 +16,6 @@
     <script src="https://web.sdk.qcloud.com/player/tcplayer/release/v5.1.0/tcplayer.v5.1.0.min.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8385136408348258"
         crossorigin="anonymous"></script>
-
-
-    <style>
-        @media screen and (max-width: 640px) {
-            #player-container-id {
-                height: 200px !important;
-            }
-        }
-
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-
-        .hd {
-            width: 100%;
-            height: 50px;
-            background-color: #0e90d2;
-        }
-
-        .hd .link-list {
-            padding: 0 16px;
-            height: 50px;
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-            gap: 24px;
-            align-items: center;
-            align-content: center;
-        }
-
-        .hd .link-list a {
-            font-size: 16px;
-            color: #fff;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .hd .link-list a:hover {
-            font-weight: bold;
-        }
-
-        .main {
-            padding: 16px 16px;
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .main h1 {
-            text-align: center;
-            font-size: 30px;
-            color: #0e90d2;
-            font-weight: 800;
-            margin-bottom: 24px;
-        }
-
-        .main .form {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 24px;
-        }
-
-        .main .form input {
-            flex: 1;
-            height: 40px;
-            border-top: 1px solid #0e90d2;
-            border-left: 1px solid #0e90d2;
-            border-bottom: 1px solid #0e90d2;
-            border-right: 0px;
-            padding-left: 10px;
-        }
-
-        .main .form input:focus {
-            outline: #0e90d2;
-        }
-
-        .main .form img {
-            margin-left: -4px;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-        }
-
-        .main p {
-            font-size: 15px;
-        }
-
-        .main .alert a {
-            color: #501445;
-            text-decoration: underline;
-        }
-
-        .main h2 {
-            font-size: 16px;
-            font-weight: bold;
-        }
-    </style>
-
 
 </head>
 
@@ -182,10 +78,10 @@
 
         </div>
 
-        <iframe
-            src="https://xuehuayu.cn/donate/?AliPayQR=null&amp;WeChatQR=null&amp;UnionPayQR=null&amp;GitHub=null&amp;BTCQR=null&amp;BTCKEY=null&amp;PayPal=null&amp;afd=https://ifdian.net/order/create?user_id=1f326f88329e11eeb16752540025c377"
-            style="overflow-x:hidden; overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"
-            frameborder="0" scrolling="no" />
+        <div class="donate">
+            <div class="msg">请作者喝咖啡</div>
+            <div class="afd"></div>
+        </div>
 
         <p>
 
@@ -196,8 +92,8 @@
             <br>
 
         <p>友情链接：
-            <a href="https://xuehuayu.cn?utm_source=m3u8player">前端壹菜鸟</a> | <a
-                href="https://cainiaoblog.cn?utm_source=m3u8player">菜鸟播客</a> |
+            <a href="https://xuehuayu.cn?utm_source=m3u8player">前端壹菜鸟</a> |
+            <a href="https://cainiaoblog.cn?utm_source=m3u8player">菜鸟播客</a>
         </p>
         </p>
 

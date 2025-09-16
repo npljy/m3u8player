@@ -1,0 +1,127 @@
+ @media screen and (max-width: 640px) {
+   #player-container-id {
+     height: 200px !important;
+   }
+ }
+
+ html,
+ body {
+   width: 100%;
+   height: 100%;
+   display: block;
+ }
+
+ .hd {
+   width: 100%;
+   height: 50px;
+   background-color: #0e90d2;
+ }
+
+ .hd .link-list {
+   padding: 0 16px;
+   height: 50px;
+   width: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   gap: 24px;
+   align-items: center;
+   align-content: center;
+ }
+
+ .hd .link-list a {
+   font-size: 16px;
+   color: #fff;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ .hd .link-list a:hover {
+   font-weight: bold;
+ }
+
+ .main {
+   padding: 16px 16px;
+   width: 100%;
+   max-width: 900px;
+   margin: 0 auto;
+ }
+
+ .main h1 {
+   text-align: center;
+   font-size: 30px;
+   color: #0e90d2;
+   font-weight: 800;
+   margin-bottom: 24px;
+ }
+
+ .main .form {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 24px;
+ }
+
+ .main .form input {
+   flex: 1;
+   height: 40px;
+   border-top: 1px solid #0e90d2;
+   border-left: 1px solid #0e90d2;
+   border-bottom: 1px solid #0e90d2;
+   border-right: 0px;
+   padding-left: 10px;
+ }
+
+ .main .form input:focus {
+   outline: #0e90d2;
+ }
+
+ .main .form img {
+   margin-left: -4px;
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+ }
+
+ .main p {
+   font-size: 15px;
+ }
+
+ .main .alert a {
+   color: #501445;
+   text-decoration: underline;
+ }
+
+ .main h2 {
+   font-size: 16px;
+   font-weight: bold;
+ }
+
+ .donate {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   max-width: 900px;
+   margin: 0 auto 24px auto;
+   padding: 16px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   text-align: center;
+   font-size: 20px;
+   font-weight: 600;
+ }
+
+ .afd {
+   width: 140px;
+   height: 40px;
+   margin-left: 10px;
+   border-radius: 8px;
+   border: 1px solid #1890ff;
+   background: url(../img/afd.png);
+   background-repeat: no-repeat;
+   background-size: 140px 40px;
+   background-position: center center;
+   cursor: pointer;
+ }
