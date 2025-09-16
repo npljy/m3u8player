@@ -29,21 +29,21 @@
     </header>
 
     <div class="main">
-        
+
         <div id="webtraf_17015" style="width:100%;text-align: center;">
             <script type="text/javascript" src="https://webtrafic.ru/ads.php?uid=17015" async></script>
         </div>
 
         <h1>m3u8在线播放器</h1>
 
-        
+
         <div class="form">
             <input type="text" id="url" value="" placeholder="请输入m3u8播放地址" autocomplete="off">
             <img src="./images/ic-play.png" alt="播放" onclick="play()" />
         </div>
-        
+
         <div class="alert alert-success" role="alert" style="letter-spacing: 1px;">
-             <p>
+            <p>
                 如果播放失败可多尝试几次
             </p>
         </div>
@@ -84,7 +84,8 @@
 
         <div class="donate">
             <div class="msg">请作者喝咖啡：</div>
-            <a class="afd" href="https://ifdian.net/order/create?user_id=1f326f88329e11eeb16752540025c377" target="_blank" rel="noopener" title="去爱发电支持作者"></a>
+            <a class="afd" href="https://ifdian.net/order/create?user_id=1f326f88329e11eeb16752540025c377"
+                target="_blank" rel="noopener" title="去爱发电支持作者"></a>
         </div>
 
         <p>
@@ -128,19 +129,21 @@
 
     </script>
     <script>
-        const loc = window.location.origin + window.location.pathname;
-        const url = document.getElementById('url');
-        const pre = document.getElementById('pre');
-        window.onload = function () {
-            pre.innerHTML = `&lt;iframe src="${loc}?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
-        };
-        url.oninput = function () {
-            if (url.value) {
-                pre.innerHTML = `&lt;iframe src="${loc}?url=${url.value}"&gt;&lt;/iframe&gt;`;
-            } else {
+        (function () {
+            const loc = window.location.origin + window.location.pathname;
+            const url = document.getElementById('url');
+            const pre = document.getElementById('pre');
+            window.onload = function () {
                 pre.innerHTML = `&lt;iframe src="${loc}?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
-            }
-        };
+            };
+            url.oninput = function () {
+                if (url.value) {
+                    pre.innerHTML = `&lt;iframe src="${loc}?url=${url.value}"&gt;&lt;/iframe&gt;`;
+                } else {
+                    pre.innerHTML = `&lt;iframe src="${loc}?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
+                }
+            };
+        })()
     </script>
 </body>
 
