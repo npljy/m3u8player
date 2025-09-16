@@ -132,13 +132,13 @@
         const url = document.getElementById('url');
         const pre = document.getElementById('pre');
         window.onload = function () {
-            pre.innerHTML = `&lt;iframe src="${loc}/player.html?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
+            pre.innerHTML = `&lt;iframe src="${loc}?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
         };
         url.oninput = function () {
             if (url.value) {
-                pre.innerHTML = `&lt;iframe src="${loc}/player.html?url=${url.value}"&gt;&lt;/iframe&gt;`;
+                pre.innerHTML = `&lt;iframe src="${loc}?url=${url.value}"&gt;&lt;/iframe&gt;`;
             } else {
-                pre.innerHTML = `&lt;iframe src="${loc}/player.html?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
+                pre.innerHTML = `&lt;iframe src="${loc}?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
             }
         };
     </script>
