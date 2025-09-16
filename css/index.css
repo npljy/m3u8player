@@ -6,15 +6,20 @@
 
  html,
  body {
-   width: 100%;
-   height: 100%;
    display: block;
+   width: 100%;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
  }
 
  .hd {
    width: 100%;
    height: 50px;
-   background-color: #0e90d2;
+   background: transparent;
+   font-size: 20px;
+   letter-spacing: 2px;
  }
 
  .hd .link-list {
@@ -31,14 +36,13 @@
  }
 
  .hd .link-list a {
-   font-size: 16px;
    color: #fff;
    text-decoration: none;
    cursor: pointer;
  }
 
  .hd .link-list a:hover {
-   font-weight: bold;
+   transform: translateY(-3px);
  }
 
  .main {
@@ -51,7 +55,7 @@
  .main h1 {
    text-align: center;
    font-size: 30px;
-   color: #0e90d2;
+   color: #1890ff;
    font-weight: 800;
    margin-bottom: 24px;
  }
@@ -61,6 +65,8 @@
    display: flex;
    flex-direction: row;
    margin-bottom: 24px;
+   border-radius: 8px;
+   overflow: hidden;
  }
 
  .main .form input {
@@ -87,7 +93,9 @@
  .main p {
    font-size: 15px;
  }
-
+ .main a {
+  color: #333 !important;
+ }
  .main .alert a {
    color: #501445;
    text-decoration: underline;
@@ -96,6 +104,13 @@
  .main h2 {
    font-size: 16px;
    font-weight: bold;
+ }
+
+ #player-container-id {
+   width: 100%;
+   min-height: 200px;
+   background: #000;
+   border-radius: 4px;
  }
 
  .donate {

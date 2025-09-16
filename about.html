@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3U8在线播放器介绍</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./css/about.css" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8385136408348258"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- 返回按钮 -->
+    <a href="javascript:history.back()" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+    <div class="container">
+        
+        <div id="webtraf_17015" style="width:100%;text-align: center;">
+            <script type="text/javascript" src="https://webtrafic.ru/ads.php?uid=17015" async></script>
+        </div>
+
+        <header>
+            <h1>M3U8在线播放器</h1>
+            <p>一款基于HLS协议的高级网络视频播放解决方案</p>
+        </header>
+
+        <div class="card">
+            <h2><i class="fas fa-info-circle"></i> 什么是M3U8播放器？hls.js播放器介绍</h2>
+            <p>M3U8播放器是一种专门用于播放HLS（HTTP Live
+                Streaming）流媒体的视频播放器。M3U8是HLS协议使用的播放列表格式，它将视频流分割成一系列小的TS文件片段，使视频能够自适应不同网络条件下的播放。</p>
+            <p>与传统的单一视频文件不同，M3U8格式允许视频以多种比特率进行编码，使播放器能够根据用户的网络速度自动切换视频质量，提供无缝的观看体验。</p>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-star"></i> M3U8播放器的优势</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <h3><i class="fas fa-bolt"></i> 自适应比特率</h3>
+                    <p>根据用户的网络条件自动调整视频质量，减少缓冲和加载时间。</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-globe"></i> 跨平台兼容</h3>
+                    <p>支持桌面浏览器、移动设备以及各种智能电视和流媒体设备。</p>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-shield-alt"></i> 内容保护</h3>
+                    <p>支持AES-128加密和DRM解决方案，保护视频内容不被盗用。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-cogs"></i> 技术实现</h2>
+            <p>现代M3U8播放器通常使用JavaScript库（如hls.js）实现，这些库提供了以下功能：</p>
+            <ul style="list-style-type: none; padding: 15px;">
+                <li style="padding: 8px; border-bottom: 1px dashed #eee;"><i class="fas fa-check-circle"
+                        style="color: #4CAF50;"></i> 实时解析M3U8播放列表</li>
+                <li style="padding: 8px; border-bottom: 1px dashed #eee;"><i class="fas fa-check-circle"
+                        style="color: #4CAF50;"></i> 下载和拼接TS片段</li>
+                <li style="padding: 8px; border-bottom: 1px dashed #eee;"><i class="fas fa-check-circle"
+                        style="color: #4CAF50;"></i> 自适应比特率切换逻辑</li>
+                <li style="padding: 8px;"><i class="fas fa-check-circle" style="color: #4CAF50;"></i> 解密加密的视频内容</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        // 简单的演示交互
+        document.querySelector('.btn').addEventListener('click', function () {
+            const url = document.querySelector('.url-input').value;
+            if (url) {
+                alert('尝试播放: ' + url + '\n（这是一个演示，实际功能需要完整实现）');
+            } else {
+                alert('请输入M3U8链接');
+            }
+        });
+    </script>
+</body>
+
+</html>
