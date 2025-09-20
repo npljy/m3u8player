@@ -41,27 +41,21 @@ function play() {
 
 document.addEventListener('DOMContentLoaded', function () {
 
-
-
-
-
   const loc = window.location.origin + window.location.pathname;
   const ipt = document.getElementById('url');
   const pre = document.getElementById('pre');
   const locUrl = getQueryStringParam('url')
 
-
-
-
-
   if (locUrl) {
     ipt.value = locUrl?.trim()
     pre.innerHTML = `&lt;iframe src="${loc}?url=${ipt.value?.trim()}"&gt;&lt;/iframe&gt;`;
+    play()
   } else {
     pre.innerHTML = `&lt;iframe src="${loc}?url=https://****.m3u8"&gt;&lt;/iframe&gt;`;
   }
 
   ipt.oninput = function () {
+    player = undefined;
     if (ipt.value) {
       pre.innerHTML = `&lt;iframe src="${loc}?url=${ipt.value?.trim()}"&gt;&lt;/iframe&gt;`;
     } else {
